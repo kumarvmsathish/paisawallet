@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/bottom_layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/pressed"
+        android:baselineAligned="false"
+        android:weightSum="2.5">
+
+        <LinearLayout
+            android:id="@+id/home_menu_id"
+            android:layout_width="@dimen/layout_width_0"
+            android:layout_height="@dimen/layout_height_55"
+            android:layout_weight="0.5"
+            android:background="@drawable/home_menu_background"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/layout_width_25"
+                android:layout_height="@dimen/layout_height_25"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/home_icon"
+                android:contentDescription="@string/home" />
+
+            <TextView
+                android:id="@+id/home_txt_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/home"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/shop_menu_id"
+            android:layout_width="@dimen/layout_width_0"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@drawable/home_menu_background"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/layout_width_25"
+                android:layout_height="@dimen/layout_height_25"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/shop_icon"
+                android:contentDescription="@string/shop" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/shop"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/scan_menu_id"
+            android:layout_width="@dimen/layout_width_0"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@drawable/home_menu_background"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/layout_width_25"
+                android:layout_height="@dimen/layout_height_25"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/scan_icon"
+                android:contentDescription="@string/scan" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/scan"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/home_profile_menu_id"
+            android:layout_width="@dimen/layout_width_0"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@drawable/home_menu_background"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/layout_width_25"
+                android:layout_height="@dimen/layout_height_25"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/profile_icon"
+                android:contentDescription="@string/profile" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/profile"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/krypto_menu_id"
+            android:layout_width="@dimen/layout_width_0"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@drawable/home_menu_background"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/new_txt_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginRight="@dimen/layout_margin_10"
+                android:background="@color/colorNewTextBg"
+                android:paddingLeft="@dimen/new_text_padding_3"
+                android:paddingRight="@dimen/new_text_padding_3"
+                android:text="@string/new_key"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/new_text_size" />
+
+            <ImageView
+                android:layout_width="@dimen/layout_width_22"
+                android:layout_height="@dimen/layout_width_22"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/krypto_press_icon"
+                android:contentDescription="@string/kryptopal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/kryptopal"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

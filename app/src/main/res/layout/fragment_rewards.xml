@@ -1,0 +1,57 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.vivartha.kryptopal.fragment.RewardsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin_20"
+            android:gravity="center_horizontal"
+            android:text="@string/rewards"
+            android:textColor="@color/colorKryptoHome"
+            android:textSize="@dimen/text_size_22"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/rewards_list_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/layout_margin_top_15"
+            android:text="@string/do_you_want_to_more_rewards"
+            android:textSize="@dimen/text_size_16"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layout_margin_10"
+            android:gravity="center_horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/connect_friends_btn_id"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/layout_height_40"
+                android:paddingLeft="@dimen/layout_margin_10"
+                android:paddingRight="@dimen/layout_margin_10"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/button_background"
+                android:text="@string/connect_to_friends"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vivartha.kryptopal.activity.KryptoActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/krypto_home_tool_id"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorKryptoHome"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="@dimen/width_150"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:contentDescription="@string/kryptopal_icon"
+                    android:src="@drawable/krypto_tool_icon" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/krypto_home_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_layout_id"
+        android:layout_marginTop="?attr/actionBarSize" />
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_krypto_nav_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/colorKryptoHome"
+        android:visibility="gone"
+        app:menu="@menu/krypto_bottom_nav_menu_items" />
+
+    <include
+        android:id="@+id/bottom_layout_id"
+        layout="@layout/home_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/bottom_layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorKryptoHome"
+        android:baselineAligned="false"
+        android:weightSum="2.5">
+
+        <LinearLayout
+            android:id="@+id/home_menu_id"
+            android:layout_width="@dimen/layout_width_0"
+            android:layout_height="@dimen/layout_height_55"
+            android:layout_weight="0.5"
+            android:background="@drawable/home_menu_krypto_background"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/layout_width_25"
+                android:layout_height="@dimen/layout_height_25"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/home"
+                android:src="@drawable/home_icon" />
+
+            <TextView
+                android:id="@+id/home_txt_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/home"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/shop_menu_id"
+            android:layout_width="@dimen/layout_width_0"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@drawable/home_menu_krypto_background"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/layout_width_25"
+                android:layout_height="@dimen/layout_height_25"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/shop"
+                android:src="@drawable/shop_icon" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/shop"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/scan_menu_id"
+            android:layout_width="@dimen/layout_width_0"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@drawable/home_menu_krypto_background"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/layout_width_25"
+                android:layout_height="@dimen/layout_height_25"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/scan"
+                android:src="@drawable/scan_icon" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/scan"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/home_profile_menu_id"
+            android:layout_width="@dimen/layout_width_0"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@drawable/home_menu_krypto_background"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/layout_width_25"
+                android:layout_height="@dimen/layout_height_25"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/profile"
+                android:src="@drawable/profile_icon" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/profile"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/krypto_menu_id"
+            android:layout_width="@dimen/layout_width_0"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@drawable/home_menu_krypto_background"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/new_txt_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginRight="@dimen/layout_margin_10"
+                android:background="@color/colorNewTextBg"
+                android:paddingLeft="@dimen/new_text_padding_3"
+                android:paddingRight="@dimen/new_text_padding_3"
+                android:text="@string/new_key"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/new_text_size" />
+
+            <ImageView
+                android:layout_width="@dimen/layout_width_22"
+                android:layout_height="@dimen/layout_width_22"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/kryptopal"
+                android:src="@drawable/krypto_press_icon" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/kryptopal"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/text_size_12" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

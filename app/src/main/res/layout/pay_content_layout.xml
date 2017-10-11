@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/layout_padding_10"
+    android:weightSum="3">
+
+
+    <LinearLayout
+        android:layout_width="@dimen/layout_width_0"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_weight="1.1">
+
+        <RadioButton
+            android:id="@+id/set_checked_item_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:scaleX="0.8"
+            android:scaleY="0.8" />
+
+        <ImageView
+            android:id="@+id/img_currency_type_id"
+            android:layout_width="@dimen/layout_width_35"
+            android:layout_height="@dimen/layout_width_35"
+            android:src="@drawable/cash_icon" />
+
+        <TextView
+            android:id="@+id/txt_currency_name_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/layout_margin_5"
+            android:textColor="@color/homeTheme"
+            android:textSize="@dimen/text_size_18"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_currency_point_id"
+        android:layout_width="@dimen/layout_width_0"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0.8"
+        android:gravity="end"
+        android:textColor="@color/colorPayAdapter"
+        android:textSize="@dimen/text_size_16" />
+
+    <LinearLayout
+        android:layout_width="@dimen/layout_width_0"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1.1"
+        android:gravity="end|center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/indian_rupee"
+            android:textSize="@dimen/text_size_16" />
+
+        <TextView
+            android:id="@+id/txt_currency_value_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTextView"
+            android:textSize="@dimen/text_size_16" />
+
+        <ImageView
+            android:id="@+id/img_currency_status_id"
+            android:layout_width="@dimen/layout_width_14"
+            android:layout_height="@dimen/layout_width_14"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</LinearLayout>

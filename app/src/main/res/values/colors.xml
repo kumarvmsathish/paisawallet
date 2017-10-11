@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0091bb</color>
+    <color name="colorPrimaryDark">#0091bb</color>
+    <color name="colorAccent">#4f4f4f</color>
+    <color name="pressed">#0091bb</color>
+    <color name="unpressed">#ffffff</color>
+    <color name="selected">#0091bb</color>
+    <color name="homeTheme">#0091bb</color>
+    <color name="colorText">#ffffff</color>
+    <color name="colorCircle">#ffffff</color>
+    <color name="colorKryptoHome">#952ef7</color>
+    <color name="colorTextKrySelected">#952ef7</color>
+    <color name="colorEditText">#787878</color>
+    <color name="colorButton">#fcff00</color>
+    <color name="colorTextView">#282828</color>
+    <color name="colorTrans">#000091bb</color>
+    <color name="colorNewTextBg">#ff0000</color>
+    <color name="colorRectangle">#8a8989</color>
+    <color name="colorItemPressed">#ebecee</color>
+    <color name="colorActionPressed">#c2ebecee</color>
+    <color name="colorNormal">#ffffff</color>
+    <color name="colorKryptoTextPressed">#b15eff</color>
+    <color name="colorValueShowCurrency">#f2f2f2</color>
+    <color name="colorTabText">#2a2a2a</color>
+    <color name="colorTabBg">#f9f9f9</color>
+    <color name="colorButtonSolidPress">#e2ce05</color>
+    <color name="colorPayAdapter">#7e7e7e</color>
+    <color name="colorTransactionLayout">#ebeaeb</color>
+
+</resources>

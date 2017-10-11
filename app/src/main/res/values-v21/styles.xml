@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppThemeViolet" parent="AppTheme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorKryptoHome</item>
+        <item name="colorPrimaryDark">@color/colorTextKrySelected</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/colorKryptoHome</item>
+        <item name="android:typeface">serif</item>
+    </style>
+
+
+
+</resources>

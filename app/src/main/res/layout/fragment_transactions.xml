@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image_icon"
+    android:orientation="vertical"
+    tools:context="com.vivartha.kryptopal.fragment.ValuesFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_20"
+        android:gravity="center_horizontal"
+        android:text="@string/transactions"
+        android:textColor="@color/colorKryptoHome"
+        android:textSize="@dimen/text_size_22"
+        android:textStyle="bold" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/transaction_tab_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTabBg"
+        app:tabIndicatorColor="@color/colorKryptoHome"
+        app:tabSelectedTextColor="@color/colorKryptoHome"
+        style="@style/MyCustomTabLayout"
+        app:tabPaddingStart="@dimen/layout_padding_min_1"
+        app:tabPaddingEnd="@dimen/layout_padding_min_1"
+        app:tabIndicatorHeight="@dimen/indicator_text_height_4"
+        app:tabTextColor="@color/colorTabText" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorTransactionLayout"
+        android:padding="@dimen/layout_padding_15">
+
+        <TextView
+            android:id="@+id/current_date_txt_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_18" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/transaction_view_pager_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

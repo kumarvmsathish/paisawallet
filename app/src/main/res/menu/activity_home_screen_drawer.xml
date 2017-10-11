@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home_icon"
+            android:title="Home" />
+
+        <item
+            android:visible="false"
+            android:id="@+id/nav_balance"
+            android:icon="@drawable/balance_icon"
+            android:title="Balance" />
+        <item
+            android:id="@+id/nav_pay"
+            android:icon="@drawable/pay_icon"
+            android:title="Pay" />
+        <item
+            android:id="@+id/nav_add_money"
+            android:icon="@drawable/add_money_icon"
+            android:title="Add Money" />
+        <item
+            android:id="@+id/nav_krypto_pal"
+            android:icon="@drawable/krypto_icon"
+            android:title="KryptoPal" />
+    </group>
+
+</menu>

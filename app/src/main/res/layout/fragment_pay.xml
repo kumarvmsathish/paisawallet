@@ -1,0 +1,99 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_image_icon"
+    tools:context="com.vivartha.kryptopal.fragment.ValuesFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layout_one_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/profile_bg_color"
+            android:orientation="vertical"
+            android:padding="@dimen/layout_padding_20">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/prepaid_amount"
+                android:textSize="@dimen/text_size_18"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_margin_top_15"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/indian_rupee"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_24"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/prepaid_edt_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorTrans"
+                    android:inputType="numberDecimal"
+                    android:hint="@string/default_amount"
+                    android:textColorHint="@color/homeTheme"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_24"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/layout_two_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_one_id"
+            android:layout_marginBottom="@dimen/layout_margin_20"
+            android:layout_marginTop="@dimen/layout_margin_20"
+            android:paddingLeft="@dimen/layout_margin_10"
+            android:paddingRight="@dimen/layout_margin_10"
+            android:text="@string/pay_using_below"
+            android:textSize="@dimen/text_size_18" />
+
+        <ListView
+            android:id="@+id/pay_list_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/layout_two_id"
+            android:scrollbars="none" />
+
+        <LinearLayout
+            android:id="@+id/layout_three_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pay_list_id"
+            android:layout_margin="@dimen/layout_margin_10"
+            android:gravity="center_horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/pay_now_btn_id"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/layout_height_40"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/button_background"
+                android:text="@string/pay_now"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>
+

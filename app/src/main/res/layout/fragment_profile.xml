@@ -1,0 +1,400 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vivartha.kryptopal.fragment.ProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/profile_bg_color"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="@dimen/layout_width_80"
+                android:layout_height="@dimen/layout_height_80"
+                android:layout_marginBottom="@dimen/layout_margin_15"
+                android:layout_marginLeft="@dimen/layout_margin_20"
+                android:layout_marginRight="@dimen/layout_margin_20"
+                android:layout_marginTop="@dimen/layout_margin_top_15"
+                android:src="@drawable/profile_image_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/baldwin_john"
+                android:textColor="@color/homeTheme"
+                android:textSize="@dimen/text_size_22"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/balance_layout_margin_top_10"
+            android:layout_marginRight="@dimen/balance_layout_margin_top_10"
+            android:layout_marginTop="@dimen/margin_layout_25"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/personal_information"
+                android:textColor="@color/colorTextView"
+                android:textSize="@dimen/text_size_18" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_margin_top_15">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="25dp"
+                    android:contentDescription="@string/email"
+                    android:src="@drawable/profile_email_icon" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/balance_layout_margin_top_10"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/email"
+                        android:textColor="@color/homeTheme"
+                        android:textSize="@dimen/text_size_16" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/profile_email_edt_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:inputType="textEmailAddress"
+                            android:text="baldwin@gmail.com"
+                            android:textColor="@color/colorRectangle"
+                            android:textSize="@dimen/text_size_14" />
+
+                        <LinearLayout
+                            android:id="@+id/email_verified_txt_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/layout_margin_5"
+                            android:padding="@dimen/layout_padding_5">
+
+                            <ImageView
+                                android:layout_width="@dimen/layout_width_22"
+                                android:layout_height="@dimen/layout_height_22"
+                                android:contentDescription="@string/success"
+                                android:src="@drawable/profile_verfify_sucess_48_icon" />
+
+                            <TextView
+                                android:id="@+id/textView3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:padding="2dp"
+                                android:text="@string/verified"
+                                android:textSize="14sp"
+                                android:textStyle="italic" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_margin_top_15">
+
+                <ImageView
+                    android:layout_width="@dimen/layout_width_25"
+                    android:layout_height="@dimen/layout_height_35"
+                    android:contentDescription="@string/mobile_number"
+                    android:src="@drawable/profile_mobile_icon" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/balance_layout_margin_top_10"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mobile_number"
+                        android:textColor="@color/homeTheme"
+                        android:textSize="@dimen/text_size_18" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/profile_mobile_edt_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/layout_height_45"
+                            android:inputType="phone|number"
+                            android:maxLength="15"
+                            android:text="+91 9564312640"
+                            android:textColor="@color/colorRectangle"
+                            android:textSize="@dimen/text_size_14" />
+
+                        <LinearLayout
+                            android:id="@+id/mobile_verified_layout_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/layout_margin_5">
+
+                            <ImageView
+                                android:layout_width="@dimen/layout_width_22"
+                                android:layout_height="@dimen/layout_height_22"
+                                android:src="@drawable/profile_verfify_sucess_48_icon" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:padding="@dimen/layout_padding_2"
+                                android:text="@string/verified"
+                                android:textSize="@dimen/text_size_14"
+                                android:textStyle="italic" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_margin_top_15">
+
+                <ImageView
+                    android:layout_width="@dimen/layout_width_25"
+                    android:layout_height="@dimen/layout_height_25"
+                    android:src="@drawable/profile_gender_icon" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/balance_layout_margin_top_10"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/gender"
+                        android:textColor="@color/homeTheme"
+                        android:textSize="@dimen/text_size_18" />
+
+                    <RadioGroup
+                        android:id="@+id/profile_gender_rdGroup_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/profile_male_rBtn_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="@string/male"
+                            android:textColor="@color/colorTextView" />
+
+                        <RadioButton
+                            android:id="@+id/profile_female_rBtn_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/layout_margin_10"
+                            android:layout_marginRight="@dimen/layout_margin_10"
+                            android:text="@string/female"
+                            android:textColor="@color/colorTextView" />
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_margin_top_15">
+
+                <ImageView
+                    android:layout_width="@dimen/layout_width_25"
+                    android:layout_height="@dimen/layout_height_25"
+                    android:src="@drawable/profile_pan_icon" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_margin_10"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pan_card"
+                        android:textColor="@color/homeTheme"
+                        android:textSize="@dimen/text_size_18" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/profile_pan_edt_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/layout_height_45"
+                            android:inputType="text"
+                            android:text="ASTDB0321"
+                            android:textColor="@color/colorRectangle"
+                            android:textSize="@dimen/text_size_14" />
+
+                        <LinearLayout
+                            android:id="@+id/pan_verified_layout_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/layout_margin_5">
+
+                            <ImageView
+                                android:layout_width="@dimen/layout_width_22"
+                                android:layout_height="@dimen/layout_height_22"
+                                android:src="@drawable/profile_verfify_sucess_48_icon" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:padding="@dimen/layout_padding_2"
+                                android:text="@string/verified"
+                                android:textSize="@dimen/text_size_14"
+                                android:textStyle="italic" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_margin_top_15">
+
+                <ImageView
+                    android:layout_width="@dimen/layout_width_25"
+                    android:layout_height="@dimen/layout_height_25"
+                    android:src="@drawable/profile_email_icon" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/balance_layout_margin_top_10"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/aadhaar_no"
+                        android:textColor="@color/homeTheme"
+                        android:textSize="@dimen/text_size_18" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/profile_aadhaar_edt_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/layout_height_45"
+                            android:inputType="text"
+                            android:text="64876326465"
+                            android:textColor="@color/colorRectangle"
+                            android:textSize="@dimen/text_size_14" />
+
+                        <LinearLayout
+                            android:id="@+id/aadhaar_verified_layout_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/layout_margin_5">
+
+                            <ImageView
+                                android:layout_width="@dimen/layout_width_22"
+                                android:layout_height="@dimen/layout_width_22"
+                                android:src="@drawable/profile_verfify_sucess_48_icon" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:padding="@dimen/layout_padding_2"
+                                android:text="@string/verified"
+                                android:textSize="@dimen/text_size_14"
+                                android:textStyle="italic" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center_horizontal"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/profile_update_btn_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/layout_height_40"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/button_background"
+                    android:text="@string/update"
+                    android:textAllCaps="false" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.vivartha.kryptopal.fragment.ContactsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_margin_10"
+        android:layout_marginRight="@dimen/layout_margin_10"
+        android:layout_marginTop="@dimen/layout_margin_20">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/contacts"
+            android:textColor="@color/colorKryptoHome"
+            android:textSize="@dimen/text_size_22"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/search_contact_id"
+            android:layout_width="@dimen/layout_width_35"
+            android:layout_height="@dimen/layout_height_35"
+            android:layout_toLeftOf="@+id/add_contact_id"
+            android:src="@drawable/search_contact_icon" />
+
+        <ImageView
+            android:id="@+id/add_contact_id"
+            android:layout_width="@dimen/layout_width_35"
+            android:layout_height="@dimen/layout_height_35"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/add_contact_icon" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/contact_list_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" />
+
+</LinearLayout>

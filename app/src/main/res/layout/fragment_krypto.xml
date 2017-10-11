@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image_icon"
+    tools:context="com.vivartha.kryptopal.activity.KryptoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text_title_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin_top_15"
+            android:gravity="center_horizontal"
+            android:text="@string/kryptopal_features"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/layout_one_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_title_id"
+            android:layout_marginLeft="@dimen/layout_margin_15"
+            android:layout_marginRight="@dimen/layout_margin_15"
+            android:layout_marginTop="@dimen/balance_layout_margin_top_10"
+            android:baselineAligned="false"
+            android:weightSum="1.5">
+
+            <LinearLayout
+                android:layout_width="@dimen/layout_weightsum_width_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/identity_layout_id"
+                    android:layout_width="@dimen/size_80"
+                    android:layout_height="@dimen/size_80"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/kripto_circle_background"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/size_35dp"
+                        android:layout_height="@dimen/size_35dp"
+                        android:contentDescription="@string/identity"
+                        android:src="@drawable/identity_image_color" />
+
+                    <TextView
+                        android:id="@+id/identity_txt_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/identity"
+                        android:textColor="@drawable/text_krypto_color_layout"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/values_layout_id"
+                    android:layout_width="@dimen/size_80"
+                    android:layout_height="@dimen/size_80"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/kripto_circle_background"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/size_35dp"
+                        android:layout_height="@dimen/size_35dp"
+                        android:contentDescription="@string/value"
+                        android:src="@drawable/values_image_color" />
+
+                    <TextView
+                        android:id="@+id/values_txt_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/value"
+                        android:textColor="@drawable/text_krypto_color_layout"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/layout_weightsum_width_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/contact_layout_id"
+                    android:layout_width="@dimen/size_80"
+                    android:layout_height="@dimen/size_80"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/kripto_circle_background"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/size_35dp"
+                        android:layout_height="@dimen/size_35dp"
+                        android:contentDescription="@string/contacts"
+                        android:src="@drawable/contacts_image_color" />
+
+                    <TextView
+                        android:id="@+id/contact_txt_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/contacts"
+                        android:textColor="@drawable/text_krypto_color_layout"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_two_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_one_id"
+            android:layout_marginLeft="@dimen/layout_margin_15"
+            android:layout_marginRight="@dimen/layout_margin_15"
+            android:layout_marginTop="@dimen/balance_layout_margin_top_10"
+            android:baselineAligned="false"
+            android:weightSum="1.5">
+
+            <LinearLayout
+                android:layout_width="@dimen/layout_weightsum_width_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/rewards_layout_id"
+                    android:layout_width="@dimen/size_80"
+                    android:layout_height="@dimen/size_80"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/kripto_circle_background"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/size_35dp"
+                        android:layout_height="@dimen/size_35dp"
+                        android:contentDescription="@string/rewards"
+                        android:src="@drawable/rewards_image_color" />
+
+                    <TextView
+                        android:id="@+id/rewards_txt_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/rewards"
+                        android:textColor="@drawable/text_krypto_color_layout"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/layout_weightsum_width_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/cards_layout_id"
+                    android:layout_width="@dimen/size_80"
+                    android:layout_height="@dimen/size_80"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/kripto_circle_background"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/size_35dp"
+                        android:layout_height="@dimen/size_35dp"
+                        android:contentDescription="@string/cards"
+                        android:src="@drawable/cards_image_color" />
+
+                    <TextView
+                        android:id="@+id/cards_txt_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/cards"
+                        android:textColor="@drawable/text_krypto_color_layout"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/layout_weightsum_width_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/transaction_layout_id"
+                    android:layout_width="@dimen/size_80"
+                    android:layout_height="@dimen/size_80"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/kripto_circle_background"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/size_35dp"
+                        android:layout_height="@dimen/size_35dp"
+                        android:contentDescription="@string/transactions"
+                        android:src="@drawable/transaction_image_color" />
+
+                    <TextView
+                        android:id="@+id/transaction_txt_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/transactions"
+                        android:textColor="@drawable/text_krypto_color_layout"
+                        android:textSize="@dimen/text_size_12" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout_three_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_two_id"
+            android:layout_marginTop="@dimen/balance_layout_margin_top_10"
+            android:background="@color/colorKryptoHome"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/currencyValueTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/balance_layout_margin_top_10"
+                    android:text="@string/cryptocurrency_value"
+                    android:textColor="@color/colorText"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/currencyValueTitle"
+                    android:layout_marginBottom="@dimen/balance_layout_margin_top_10"
+                    android:layout_marginTop="@dimen/layout_margin_5"
+                    android:gravity="center">
+
+
+
+
+                    <TextView
+                        android:id="@+id/balance_txt_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/doller_default_value"
+                        android:textColor="@color/colorText"
+                        android:textSize="@dimen/text_size_22"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/krypto_balance_arrow_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/layout_height_20"
+                        android:layout_marginLeft="@dimen/margin_layout_min10"
+                        android:contentDescription="@string/up_arrow" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_layout_min20"
+                        android:layout_marginTop="@dimen/layout_margin_5"
+                        android:text="10.2%"
+                        android:textColor="@color/colorText"
+                        android:textSize="@dimen/text_size_8" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/details_txt_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/layout_margin_12"
+                    android:background="@color/colorButton"
+                    android:padding="@dimen/layout_padding_5"
+                    android:text="@string/details"
+                    android:textColor="@color/colorKryptoHome" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_four_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_three_id"
+            android:layout_marginTop="@dimen/layout_margin_top_15"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/action_kryptopal"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/layout_padding_5"
+                android:weightSum="1.5">
+
+                <LinearLayout
+                    android:id="@+id/exchange_layout_id"
+                    android:layout_width="@dimen/layout_weightsum_width_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/krypto_action_bg"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/action_krypto_icon_size_45"
+                        android:layout_height="@dimen/action_krypto_icon_size_45"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/exchange_icon" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/action_text_margin_top_2"
+                        android:gravity="center"
+                        android:text="@string/exchange"
+                        android:textColor="@color/colorKryptoHome"
+                        android:textSize="@dimen/text_size_14" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/send_layout_id"
+                    android:layout_width="@dimen/layout_weightsum_width_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/krypto_action_bg"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/action_krypto_icon_size_45"
+                        android:layout_height="@dimen/action_krypto_icon_size_45"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/send_icon" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/action_text_margin_top_2"
+                        android:gravity="center"
+                        android:text="@string/send"
+                        android:textColor="@color/colorKryptoHome"
+                        android:textSize="@dimen/text_size_14" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/request_layout_id"
+                    android:layout_width="@dimen/layout_weightsum_width_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/krypto_action_bg"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/action_krypto_icon_size_45"
+                        android:layout_height="@dimen/action_krypto_icon_size_45"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/request_icon" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/action_text_margin_top_2"
+                        android:gravity="center"
+                        android:text="@string/request"
+                        android:textColor="@color/colorKryptoHome"
+                        android:textSize="@dimen/text_size_14" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/balance_layout_margin_top_10"
+                android:layout_marginTop="@dimen/margin_layout_8"
+                android:padding="@dimen/layout_padding_5"
+                android:weightSum="1.5">
+
+                <LinearLayout
+                    android:id="@+id/transfer_layout_id"
+                    android:layout_width="@dimen/layout_weightsum_width_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/krypto_action_bg"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/action_krypto_icon_size_45"
+                        android:layout_height="@dimen/action_krypto_icon_size_45"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/transfer_icon" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/action_text_margin_top_2"
+                        android:gravity="center"
+                        android:text="@string/transfer"
+                        android:textColor="@color/colorKryptoHome"
+                        android:textSize="@dimen/text_size_14" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/sell_layout_id"
+                    android:layout_width="@dimen/layout_weightsum_width_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/krypto_action_bg"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/action_krypto_icon_size_45"
+                        android:layout_height="@dimen/action_krypto_icon_size_45"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/sell_icon" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center"
+                        android:text="@string/sell"
+                        android:textColor="@color/colorKryptoHome"
+                        android:textSize="@dimen/text_size_14" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/buy_layout_id"
+                    android:layout_width="@dimen/layout_weightsum_width_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/krypto_action_bg"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/action_krypto_icon_size_45"
+                        android:layout_height="@dimen/action_krypto_icon_size_45"
+                        android:layout_gravity="center_horizontal"
+                        android:contentDescription="@string/buy"
+                        android:src="@drawable/buy_icon" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/action_text_margin_top_2"
+                        android:gravity="center"
+                        android:text="@string/buy"
+                        android:textColor="@color/colorKryptoHome"
+                        android:textSize="@dimen/text_size_14" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
+

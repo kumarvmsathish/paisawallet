@@ -1,0 +1,221 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image_icon"
+    tools:context="com.vivartha.kryptopal.fragment.IdentityFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/layout_margin_20"
+            android:text="@string/exchange"
+            android:textColor="@color/colorKryptoHome"
+            android:textSize="@dimen/text_size_22"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_margin_20"
+            android:layout_marginRight="@dimen/layout_margin_20"
+            android:layout_marginTop="@dimen/layout_margin_20"
+            android:text="@string/select_from"
+            android:textColor="@color/colorTextView"
+            android:textSize="@dimen/text_size_16" />
+
+        <Spinner
+            android:id="@+id/exchange_from_spnr_id"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="@dimen/layout_margin_20"
+            android:layout_marginRight="@dimen/layout_margin_20" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin_10"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="@dimen/layout_weightsum_width_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_margin_20"
+                    android:layout_marginRight="@dimen/layout_margin_20"
+                    android:text="@string/enter_value"
+                    android:textColor="@color/colorTextView"
+                    android:textSize="@dimen/text_size_16" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_margin_20"
+                    android:layout_marginRight="@dimen/layout_margin_20">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dollar"
+                        android:textColor="@color/colorEditText"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <EditText
+                        android:id="@+id/exchange_value_edt_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:maxLength="15"
+                        android:textColor="@color/colorEditText"
+                        android:textSize="@dimen/text_size_14" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/or"
+                android:textColor="@color/colorTextView"
+                android:textSize="@dimen/text_size_16" />
+
+            <LinearLayout
+                android:layout_width="@dimen/layout_weightsum_width_0"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_margin_20"
+                    android:layout_marginRight="@dimen/layout_margin_20"
+                    android:text="@string/enter_qty"
+                    android:textColor="@color/colorTextView"
+                    android:textSize="@dimen/text_size_16" />
+
+                <EditText
+                    android:id="@+id/exchange_qty_edt_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_margin_20"
+                    android:layout_marginRight="@dimen/layout_margin_20"
+                    android:inputType="numberDecimal"
+                    android:maxLength="15"
+                    android:textColor="@color/colorEditText"
+                    android:textSize="@dimen/text_size_14" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_margin_20"
+            android:layout_marginRight="@dimen/layout_margin_20"
+            android:layout_marginTop="@dimen/layout_margin_10"
+            android:text="@string/select_to"
+            android:textColor="@color/colorTextView"
+            android:textSize="@dimen/text_size_16" />
+
+
+        <Spinner
+            android:id="@+id/exchange_to_spnr_id"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="@dimen/layout_margin_20"
+            android:layout_marginRight="@dimen/layout_margin_20" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_margin_20"
+            android:layout_marginRight="@dimen/layout_margin_20"
+            android:layout_marginTop="@dimen/layout_margin_10"
+            android:text="@string/coming_qry"
+            android:textColor="@color/colorTextView"
+            android:textSize="@dimen/text_size_16" />
+
+        <EditText
+            android:id="@+id/exchange_coming_qty_edt_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_margin_20"
+            android:layout_marginRight="@dimen/layout_margin_20"
+            android:textColor="@color/colorEditText"
+            android:textSize="@dimen/text_size_14"
+            android:maxLength="15"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_margin_20"
+            android:layout_marginRight="@dimen/layout_margin_20"
+            android:layout_marginTop="@dimen/layout_margin_10"
+            android:text="@string/your_wallet_address"
+            android:textColor="@color/colorTextView"
+            android:textSize="@dimen/text_size_16" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_margin_20"
+            android:layout_marginRight="@dimen/layout_margin_20"
+            android:textColor="@color/colorEditText"
+            android:textSize="@dimen/text_size_14"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_layout_45"
+            android:layout_marginRight="@dimen/margin_layout_45"
+            android:layout_marginTop="@dimen/layout_margin_20"
+            android:gravity="center"
+            android:text="@string/note_our_lowest_transaction_fee"
+            android:textColor="@color/colorEditText"
+            android:textSize="@dimen/text_size_13" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/layout_margin_top_15"
+            android:text="@string/do_you_want_to_proceed"
+            android:textSize="@dimen/text_size_16"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layout_margin_10"
+            android:gravity="center_horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/exchange_btn_id"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/layout_height_40"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/button_background"
+                android:paddingLeft="@dimen/layout_margin_10"
+                android:paddingRight="@dimen/layout_margin_10"
+                android:text="@string/exchange_now"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

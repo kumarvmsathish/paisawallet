@@ -1,0 +1,127 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image_icon"
+    android:fillViewport="true"
+    tools:context="com.vivartha.kryptopal.fragment.AddMoneyFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/profile_bg_color"
+            android:orientation="vertical"
+            android:padding="@dimen/add_meney_title_padding_20">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/add_amount"
+                android:textSize="@dimen/text_size_18" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/layout_margin_top_15"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/indian_rupee"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_22" />
+
+                <EditText
+                    android:id="@+id/add_money_edt_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorTrans"
+                    android:inputType="numberDecimal"
+                    android:minWidth="@dimen/min_width_50"
+                    android:maxLength="10"
+                    android:hint="@string/default_amount"
+                    android:textColorHint="@color/homeTheme"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/text_size_22" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/balance_layout_margin_top_10"
+            android:paddingRight="@dimen/balance_layout_margin_top_10"
+            android:text="@string/select_your_bank"
+            android:textSize="@dimen/text_size_18" />
+
+        <GridView
+            android:id="@+id/banks_list_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:choiceMode="singleChoice"
+            android:horizontalSpacing="@dimen/horizontal_spacing_8"
+            android:listSelector="@android:color/darker_gray"
+            android:numColumns="3"
+            android:padding="@dimen/layout_padding_8"
+            android:verticalSpacing="@dimen/horizontal_spacing_8" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/balance_layout_margin_top_10"
+            android:gravity="center_horizontal"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/add_amount_btn_id"
+                android:layout_width="@dimen/layout_weightsum_width_0"
+                android:layout_height="@dimen/layout_height_40"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.4"
+                android:background="@drawable/button_background"
+                android:text="@string/add" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_margin_20"
+            android:layout_marginRight="@dimen/layout_margin_20"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/layout_width_25"
+                android:layout_height="@dimen/layout_height_25"
+                android:contentDescription="@string/lock_icon"
+                android:src="@drawable/lock_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/bit_encryption" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="@dimen/layout_weightsum_height_0"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/balance_layout_margin_top_10"
+            android:layout_weight="0.5"
+            android:contentDescription="@string/security_icon"
+            android:src="@drawable/security_image" />
+
+
+    </LinearLayout>
+
+</ScrollView>
