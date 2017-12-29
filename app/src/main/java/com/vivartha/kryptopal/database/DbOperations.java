@@ -160,6 +160,15 @@ public class DbOperations extends DbHandler {
         return list;
     }
 
+    /**
+     * Add user transaction details while user add amount into wallet or pay amount from wallet
+     * All the details added into the transaction table.
+     * @param type
+     * @param transactionFrom
+     * @param amount
+     * @param date
+     * @return
+     */
     public boolean addTransaction(String type, String transactionFrom, String amount, String date) {
         SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
@@ -172,7 +181,11 @@ public class DbOperations extends DbHandler {
         return status > 0;
     }
 
-
+    /**
+     * Get all the transactions list from transaction table.
+     * which comes with title, name, amount and date.
+     * @return
+     */
     public List<Transaction> getAllTransactions() {
         List<Transaction> list = new ArrayList<>();
         SQLiteDatabase sqLiteDatabase = this.getReadableDatabase();

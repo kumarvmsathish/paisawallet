@@ -73,7 +73,7 @@ public class ValuesAdapter extends BaseAdapter {
          * setMinimumFractionDigits(4) for 4 decimal values
          */
         NumberFormat format = NumberFormat.getCurrencyInstance(new Locale("en", "US"));
-        format.setMinimumFractionDigits(4);
+        format.setMinimumFractionDigits(8);
 
         /**
          * Set all the data into the viewHolder views to populate.

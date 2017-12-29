@@ -49,7 +49,7 @@
     <string name="add_money_icon">Add Money Icon</string>
     <string name="add_money">Add Money</string>
     <string name="kryptopal_icon">KryptoPal Icon</string>
-    <string name="total_flat_currency_balance">Total FLAT Currency Balance</string>
+    <string name="total_flat_currency_balance">Total FIAT Currency Balance</string>
     <string name="this_feature_is_coming_soon">This feature is coming soon!</string>
     <string name="message">Message</string>
     <string name="ok">Ok</string>
